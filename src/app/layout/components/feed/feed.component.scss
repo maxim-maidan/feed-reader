@@ -29,6 +29,7 @@
     &__buttons {
         width: 10%;
         position: relative;
+        text-align: justify;
     }
     &__button {
         padding: 2px 5px;
@@ -42,15 +43,15 @@
         border: 1px solid rgba(0, 0, 196, 0.418);
         &--edit {
             top: 0;
-            right: 0;
+            right: 100px;
         }
         &--delete {
             top: 0;
-            right: 40px;
+            right: 46px;
         }
         &--more {
             top: 0;
-            right: 95px;
+            right: 0;
         }
     }
     &__date {

@@ -2,9 +2,9 @@
     <div class="feed__photo"></div>
     <div class="feed__wrapper flex fd-row jc-sb wrap">
         <div class="feed__title">{{feed.title}}</div>
-        <div class="feed__buttons flex fd-row-rev" *ngIf = 'isMyPost'>
-            <button class="feed__button feed__button--edit" (click)='editPost()'>Edit</button>
-            <button class="feed__button feed__button--delete" (click)='deletePost()' >Delete</button>
+        <div class="feed__buttons flex fd-row-rev">
+            <button class="feed__button feed__button--edit" (click)='editPost()' *ngIf = 'isMyPost'>Edit</button>
+            <button class="feed__button feed__button--delete" (click)='deletePost()' *ngIf = 'isMyPost'>Delete</button>
             <button class="feed__button feed__button--more">More</button>
         </div>
         <div class="feed__body">{{feed.body}}</div>
