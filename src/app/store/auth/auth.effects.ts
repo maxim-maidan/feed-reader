@@ -32,4 +32,10 @@ export class AuthEffects {
             this.router.navigate(['/login']);
         })
     ),{dispatch: false});
+    showAcc$ = createEffect(() => this.actions.pipe(
+        ofType(AuthActions.showAcc),
+        map(() => {
+            this.router.navigate(['/account']);
+        })
+    ),{dispatch: false});
 }

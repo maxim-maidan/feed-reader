@@ -4,6 +4,7 @@ import { User } from "./auth.model";
 export enum authActionsType {
     login = '[Auth] Attempt to Login',
     logOut = '[Auth] Log Out',
+    showAccount = '[Auth] Show Account',
     success = '[Auth] Login Success',
     failed = '[Auth] Login Failed',
 };
@@ -15,6 +16,9 @@ export const attemptLogin = createAction(
 );
 export const logOut = createAction(
     authActionsType.logOut
+);
+export const showAcc = createAction(
+    authActionsType.showAccount
 );
 
 export const loginSuccess = createAction(

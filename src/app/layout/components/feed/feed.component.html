@@ -5,7 +5,7 @@
         <div class="feed__buttons flex fd-row-rev">
             <button class="feed__button feed__button--edit" (click)='editPost()' *ngIf = 'isMyPost'>Edit</button>
             <button class="feed__button feed__button--delete" (click)='deletePost()' *ngIf = 'isMyPost'>Delete</button>
-            <button class="feed__button feed__button--more">More</button>
+            <button class="feed__button feed__button--more" [routerLink] = "['/feed',feed.id]">More</button>
         </div>
         <div class="feed__body">{{feed.body}}</div>
         <div class="feed__date">{{date | date:'dd MMM h:mm a'}}</div>

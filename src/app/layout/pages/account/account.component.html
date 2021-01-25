@@ -1,1 +1,38 @@
-<p>account works!</p>
+<app-header></app-header>
+<div class="account flex fd-row jc-sb wrap">
+    <div class="account__main-info flex fd-row">
+        <div class="account__photo"></div>
+        <div>
+           <p class="account__user-name">
+               {{user.name}}
+           </p>
+           <p class="account__status">online</p>
+        </div>
+    </div>
+    <div class="account__all-info flex fd-row jc-sb">
+        <div  class="account__ittem account__ittem--title">
+            <p>Email:</p>
+            <p>Phone:</p>
+            <p>Website:</p>
+            <p>Company:</p>
+        </div>
+        <div  class="account__ittem account__ittem--info">
+            <p>{{user.email}}</p>
+            <p>{{user.phone}}</p>
+            <p>{{user.website}}</p>
+            <p>{{user.company.name}}</p>
+        </div>
+        <div  class="account__ittem account__ittem--title">
+            <p>Street:</p>
+            <p>Suite:</p>
+            <p>City:</p>
+            <p>Zipcode:</p>
+        </div>
+        <div  class="account__ittem account__ittem--info">
+            <p>{{user.address.street}}</p>
+            <p>{{user.address.suite}}</p>
+            <p>{{user.address.city}}</p>
+            <p>{{user.address.zipcode}}</p>
+        </div>
+    </div>
+</div>

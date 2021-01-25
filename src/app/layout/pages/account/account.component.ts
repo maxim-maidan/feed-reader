@@ -9,10 +9,18 @@ import { User } from 'src/app/store/auth/auth.model';
 })
 export class AccountComponent implements OnInit {
 
-  constructor(private store: Store) { }
+  user: User;
+  constructor(private store: Store<any>) { }
 
   ngOnInit(): void {
 
+    this.store.pipe(
+      select('auth')
+    ).subscribe(
+      (res) => {
+        this.user = res.user;
+      }
+    )
   }
 
 }

@@ -20,6 +20,7 @@ import { FeedComponent } from './layout/components/feed/feed.component';
 import { FeedsComponent } from './layout/pages/feeds/feeds.component';
 import { FeedEffects } from './store/feed/feed.effects';
 import { AccountComponent } from './layout/pages/account/account.component';
+import { FeedPageComponent } from './layout/pages/feed-page/feed-page.component';
 
 const reducers = { 
   feed: fromFeed.reducer, 
@@ -35,7 +36,8 @@ const reducers = {
     HeaderComponent,
     FeedComponent,
     FeedsComponent,
-    AccountComponent
+    AccountComponent,
+    FeedPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+.feed-page {
+    padding: 50px;
+    font-family: sans-serif;
+    text-align: center;
+    &__title {
+        margin-bottom: 20px;
+        color: rgba(0, 0, 196, 0.418);
+        text-transform: uppercase;
+    }
+    &__button {
+        padding: 5px 10px;
+        margin-top: 10px;
+
+        background-color: white;
+        color: rgba(0, 0, 196, 0.418);
+        align-self: flex-end;
+
+        border: 1px solid rgba(0, 0, 196, 0.418);
+    }
+}

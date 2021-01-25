@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
-import { logOut } from 'src/app/store/auth/auth.actions';
+import { logOut, showAcc } from 'src/app/store/auth/auth.actions';
 import { User } from 'src/app/store/auth/auth.model';
 import { LoadFeeds, LoadMyFeeds } from 'src/app/store/feed/feed.actions';
 
@@ -33,5 +33,8 @@ export class HeaderComponent implements OnInit {
   }
   logOut(){
     this.store.dispatch(logOut())
+  }
+  showAccount(){
+    this.store.dispatch(showAcc())
   }
 }
