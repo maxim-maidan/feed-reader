@@ -1,0 +1,10 @@
+<div class="login flex fd-column jc-center">
+    <h2 class="login__header" (click)="quickLogin()">Feed Reader</h2>
+    <i class="fa fa-sign-in-alt login__icon"></i>
+    <form class="flex fd-column jc-center" [formGroup]="singInForm">
+        <input class="login__input" type="text" placeholder="username" formControlName="login">
+        <input class="login__input" type="password" placeholder="password" formControlName="password">
+        <p *ngIf='isEmptyForm' class="login__warning">*Input field must not be empty</p>
+        <button class="login__button buttonsd" type="button" (click)="singIn()">Sing in</button>
+    </form>
+</div>

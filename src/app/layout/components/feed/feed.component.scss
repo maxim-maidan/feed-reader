@@ -1,0 +1,60 @@
+.feed {
+    width: 90%;
+    height: auto;
+
+    padding: 10px;
+    margin: 5px auto;
+
+    font-family: sans-serif;
+
+    border: 1px solid rgba(0, 0, 196, 0.418);
+    border-top: 6px solid rgba(0, 0, 196, 0.418);
+    &__photo {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(0, 0, 196, 0.418);
+        border-radius: 50%;
+    }
+    &__wrapper {
+        width: calc(100% - 110px);
+    }
+    &__title {
+        width: 60%;
+        text-transform: uppercase;
+    }
+    &__body {
+        width: 100%;
+        margin: 5px 0;
+    }
+    &__buttons {
+        width: 10%;
+        position: relative;
+    }
+    &__button {
+        padding: 2px 5px;
+        margin: 1px;
+
+        background-color: white;
+        color: rgba(0, 0, 196, 0.418);
+        
+        position: absolute;
+
+        border: 1px solid rgba(0, 0, 196, 0.418);
+        &--edit {
+            top: 0;
+            right: 0;
+        }
+        &--delete {
+            top: 0;
+            right: 40px;
+        }
+        &--more {
+            top: 0;
+            right: 95px;
+        }
+    }
+    &__date {
+        width: 100%;
+        text-align: right;
+    }
+}

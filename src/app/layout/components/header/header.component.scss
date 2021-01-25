@@ -1,0 +1,39 @@
+.header {
+    width: 90%;
+    height: auto;
+
+    padding: 30px 5%;
+    background-color: rgba(0, 0, 196, 0.418);
+
+    font-family: sans-serif;
+    color: honeydew;
+    &__logo {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    &__page {
+        margin: 0 20px;
+        cursor: pointer;
+        &:active {
+            border: none;
+            color: black
+        }
+    }
+    &__user {
+        cursor: pointer;
+    }
+    &__logout {
+        padding: 5px;
+        margin: -5px 10px 0;
+
+        font-size: 1.2pm;
+        font-weight: 600;
+        border: 1px solid rgba(0, 0, 146, 0.418);
+        border-radius: 10%;
+
+        background-color: white;
+        color: rgba(0, 0, 196, 0.418);
+        cursor: pointer;
+    }
+}

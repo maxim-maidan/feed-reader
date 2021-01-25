@@ -1,0 +1,11 @@
+<div class="header flex fd-row jc-sb wrap">
+    <p class="header__logo">Feed Reader</p>
+    <div class="header__pages flex fd-row jc-sb wrap">
+        <p class="header__page"[routerLink]="['/feeds']" (click)='showAllFeed()'>All Feed</p>
+        <p class="header__page" [routerLink]="['/feeds']" [queryParams]="{id: user.id}" (click)='showMyFeed()'>My Feed</p>
+    </div>
+    <div class="header__account flex fd-row jc-sb wrap">
+        <p class="header__user">Account</p>
+        <button class="header__logout" (click)='logOut()'>LogOut</button>
+    </div>
+</div>

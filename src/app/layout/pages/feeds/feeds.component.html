@@ -1,0 +1,13 @@
+<form class="add-menu flex fd-column wrap" [formGroup]="feedForm" *ngIf='isMyPost'>
+    <input class="add-menu__input" type="text" placeholder="Title" formControlName="title">
+    <input class="add-menu__input" type="text" placeholder="Body" formControlName="body">
+    <p *ngIf='isEmptyForm' class="add-menu__warning">*Input field must not be empty</p>
+    <button class="add-menu__button" (click)="addPost()"*ngIf = "!isEnableEditing">Add Post</button>
+    <button class="add-menu__button" (click)="editPost()" *ngIf = "isEnableEditing">Edit Post</button>
+</form>
+
+<app-feed 
+    *ngFor="let feed of feeds" [feed]="feed"
+    (editFeed) = "editFeed($event)"         
+>
+</app-feed>

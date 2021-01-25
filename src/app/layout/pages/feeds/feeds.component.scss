@@ -1,0 +1,35 @@
+.add-menu {
+    width: 90%;
+    height: auto;
+
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: 5px auto;
+    position: relative;
+
+    font-family: sans-serif;
+
+    border: 1px solid rgba(0, 0, 196, 0.418);
+    border-top: 6px solid rgba(0, 0, 196, 0.418);
+    &__input{
+        width: 90%;
+        margin: 10px auto;
+    }
+    &__button{
+        padding: 2px 5px;
+        margin: 1px;
+
+        background-color: white;
+        color: rgba(0, 0, 196, 0.418);
+        
+        position: absolute;
+        bottom: 10px;
+        right: calc(5% + 5px);
+        
+        border: 1px solid rgba(0, 0, 196, 0.418);
+    }
+    &__warning{
+        margin-left: 5%;
+        color: brown;
+    }
+}
