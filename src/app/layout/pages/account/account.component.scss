@@ -1,5 +1,6 @@
 .account {
-    padding: 30px;
+    width: 90%;
+    margin: 30px auto;
 
     font-family: sans-serif;
     &__main-info {
@@ -27,7 +28,8 @@
         &--title {
             color: rgba(0, 0, 196, 0.418);
         }
-        &, p{
+        &,
+        p {
             margin: 5px 0;
         }
     }
